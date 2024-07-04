@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> Prototype</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+                <div class="navbar-form navbar-right user-icon">
+                    <i class="fa fa-user"></i>
+                    <span>HridikaB</span>
+                </div>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Instruments</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Mine</th>
+                                <th>Structure</th>
+                                <th>Sub-structure</th>
+                                <th>Instrument Name</th>
+                                <th> Instrument Type </th>
+                                <th> Automated </th>
+                                <th>Status</th>
+                                <th>Reading Memo Frequency (EOR)</th>
+                                <th>Current Reading Frequency</th>
+                                <th>Changed By (Initials)</th>
+                                <th>Last Status Changed Date</th>
+                                <th>Reason for Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select Mine
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">MRM</a></li>
+                                        <li><a href="#">JPM</a></li>
+                                        <li><a href="#">SKB</a></li>
+                                    </ul>
+                                </div>
+                                <!--<div class="tooltip"><i class="fa fa-file-excel-o"></i><span class="tooltiptext">Excel File</span></div>MRM</td>-->
+                                <!--<td>MRM</td>-->
+                                <td>IPD</td>
+                                <td>IPD6N</td>
+                                <td>IPD6-VWP-2310-123456</td>
+                                <td>
+                                    <!--Piezometer-->
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Type
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Piezometer</a></li>
+                                            <li><a href="#">Inclinometer</a></li>
+                                            <li><a href="#">Tiltmeter</a></li>
+                                            <li><a href="#">Standpipe</a></li>
+                                            <li><a href="#">Extensometer</a></li>
+                                            <li><a href="#">TDR</a></li>
+                                            <li><a href="#">Outtakes</a></li>
+                                            <li><a href="#">Settlement Plates</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td> Yes </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Status
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Active</a></li>
+                                            <li><a href="#">Abandoned</a></li>
+                                            <li><a href="#">Orchestrator</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>Monthly</td>
+                                <td>Weekly</td>
+                                <td>YZ</td>
+                                <td>24-June-2024</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Reason
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Construction</a></li>
+                                            <li><a href="#">Trigger</a></li>
+                                            <li><a href="#">Placement</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Mine
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">MRM</a></li>
+                                            <li><a href="#">JPM</a></li>
+                                            <li><a href="#">SKB</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--<div class="tooltip"><i class="fa fa-file-excel-o"></i><span class="tooltiptext">Excel File</span></div>MRM</td>-->
+                                <td>IPD</td>
+                                <td>IPD6S</td>
+                                <td>IPD6-VWP-2311-123457</td>
+                                <td>
+                                    <!--Piezometer</td>-->
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Type
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Piezometer</a></li>
+                                            <li><a href="#">Inclinometer</a></li>
+                                            <li><a href="#">Tiltmeter</a></li>
+                                            <li><a href="#">Standpipe</a></li>
+                                            <li><a href="#">Extensometer</a></li>
+                                            <li><a href="#">TDR</a></li>
+                                            <li><a href="#">Outtakes</a></li>
+                                            <li><a href="#">Settlement Plates</a></li>
+                                        </ul>
+                                    </div>
+                                <td> No</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Status
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Active</a></li>
+                                            <li><a href="#">Abandoned</a></li>
+                                            <li><a href="#">Orchestrator</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>Monthly</td>
+                                <td>Monthly</td>
+                                <td>ZZ</td>
+                                <td>29-June-2024</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select Reason
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Construction</a></li>
+                                            <li><a href="#">Trigger</a></li>
+                                            <li><a href="#">Placement</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                <div>
+                
+                        <!-- Dropdown to change frequency -->
+                    <select id="structure-select">
+                        <option value="">Select Structure</option>
+                        <option value="IPD">IPD</option>
+                        <option value="OtherStructure">OtherStructure</option>
+                    </select>
+                        <select id="substructure-select">
+                            <option value="">Select Sub-structure</option>
+                            <option value="IPD">IPD6N</option>
+                            <option value="IPD">IPD6S</option>
+                        </select>
+                            <select id="instrument-type-select" >
+                                <option value="">Select Instrument Type</option>
+                                <option value="">Automated</option>
+                                <option value="">Manual</option>
+                            </select>
+                    <input type="text" id="frequency-input" placeholder="New Frequency">
+                    <button id="change-frequency-button" class="btn btn-primary">Change Frequency</button>
+                    
+                    </div> 
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

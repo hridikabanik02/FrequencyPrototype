@@ -1,0 +1,12 @@
+<div>
+                
+                    <!-- Dropdown to change frequency -->
+                    <select id="substructure-select">
+                        <option value="IPD6N">IPD6N</option>
+                        <option value="IPD6S">IPD6S</option>
+                        <!-- Add other substructures as needed -->
+                    </select>
+                    <input type="text" id="frequency-input" placeholder="New Frequency">
+                    <button id="change-frequency-button" class="btn btn-primary">Change Frequency</button>
+                
+                </div> 

@@ -1,0 +1,88 @@
+body {
+    padding-top: 70px; /* Ensures content doesn't overlap fixed navbar */
+}
+
+.navbar {
+    background-color: #357ac4;
+    border-color: #6eb5ff;
+    color: #fff; /* White text color for better contrast */
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+    color: #fff; /* White text color for links and brand */
+}
+
+.navbar-toggle {
+    border-color: #fff; /* White border color for toggle button */
+}
+.container-fluid {
+    margin-top: 30px; /* Reduced from 60px to 30px */
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
+    background-color: #4b9dff; /* Darker blue on hover or active */
+    color: #fff; /* White text color */
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-form.navbar-left {
+    margin-right: 20px; /* Creates space between search bar and user icon */
+}
+
+.navbar-form.navbar-right {
+    padding: 10px 15px; /* Proper alignment and spacing for the user icon */
+    color: #fff; /* Text color for the username */
+}
+
+.navbar-form .user-icon i {
+    font-size: 20px; /* Icon size */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.navbar-form .user-icon span {
+    display: block; /* Username appears below the icon */
+    font-size: 12px; /* Username font size */
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;  /* Example size */
+    font-family: 'Arial', sans-serif;  /* Example font family */
+    color: #333;  /* Example text color */
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown .dropdown-toggle {
+    background: transparent;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+#change-frequency-button {
+    margin-top: 10px;
+}
